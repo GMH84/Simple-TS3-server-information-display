@@ -15,7 +15,7 @@ def get_client_list():
         # Create a tcp socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.connect((host, qport))
-
+        # ******************
         # Receive response from server
         sock.recv(4096).decode('utf-8')
         # ******************
